@@ -12,8 +12,10 @@ export default function Card(props){
                         <h2>{props.type}</h2>
                         <h2><strong>...</strong></h2>
                     </div>
-                    <div className={styles.title}>{props.duration}hrs</div>
-                    <p>Last Week - {props.prevDuration}hrs</p>
+                    <div className={styles.cardfooter}>
+                        <div className={styles.title}>{props.duration}hrs</div>
+                        <p>Last Week - {props.prevDuration}hrs</p>
+                    </div>
                 </div>
             </div>
         </>
