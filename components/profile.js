@@ -2,7 +2,8 @@ import Image from 'next/image'
 import profilepic from '../public/images/image-jeremy.png'
 import styles from '../styles/Home.module.css'
 
-export default function Profile(){
+function Profile(props){
+      
     return (
         <>
             <div className={styles.profile}>
@@ -16,9 +17,9 @@ export default function Profile(){
                     </div>
                 </div>
                 <div className={styles.footer}>
-                    <a href='#'>Daily</a>
-                    <a href='#'>Weekly</a>
-                    <a href='#'>Monthly</a>
+                    <a href='#' onClick={props.onClick('daily')}>Daily</a>
+                    <a href='#' onClick={props.onClick('weekly')}>Weekly</a>
+                    <a href='#' onClick={props.onClick('monthly')}>Monthly</a>
                 </div>
             </div>
             
@@ -26,3 +27,5 @@ export default function Profile(){
         
     )
 }
+
+export default Profile
