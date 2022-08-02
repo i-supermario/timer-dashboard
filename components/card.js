@@ -5,7 +5,7 @@ export default function Card(props){
         <>
             <div className={styles.container} style={{backgroundColor: props.color,borderRadius:"10px" }} >
                 <div className={styles.empty}>
-
+                    {props.imgURL}
                 </div>
                 <div className={styles.card}>
                     <div className={styles.header}>    
